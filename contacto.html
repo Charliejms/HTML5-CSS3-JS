@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bat Contacto</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="#">Bat Inicio</a>
+        </li>
+        <li>
+            <a href="#quien-soy">Bat Quien soy</a>
+        </li>
+        <li>
+            <a href="#equipo">Bat Equipo</a>
+        </li>
+        <li>
+            <a href="#transporte">Bat Transporte</a>
+        </li>
+        <li>
+            <a href="#contacto.html">Bat Contacto</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <h2> Contacta con nosotros:</h2>
+    <div id="googleMaps"></div>
+    <div>
+        <form action="contact-batman" method="get">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <label for="apellidos"></label>
+                <input type="text" name="apellidos" id="apellidos">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="name@batcompany.com" required
+                       pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]">
+                <!--Buscar otra expresión regular -->
+            </div>
+            <div>
+                <label for="tipo_mision_1">Consulta</label>
+                <input type="radio" name="tipo_mision" id="tipo_mision_1" value="Consulta" required>
+                <label for="tipo_mision_2">Misión simple</label>
+                <input type="radio" name="tipo_mision" id="tipo_mision_2" value="Misión simple" required>
+                <label for="tipo_mision_3">Rescate</label>
+                <input type="radio" name="tipo_mision" id="tipo_mision_3" value="Rescate" required>
+                <label for="tipo_mision_4">Salvar Gothan</label>
+                <input type="radio" name="tipo_mision" id="tipo_mision_4" value="Salvar Gothan" required>
+            </div>
+            <div>
+                <label for="ejercito">Tamaño del ejercito</label>
+                <input type="number" name="ejercito" id="ejercito" min="20" required>
+            </div>
+            <div>
+                <label for="fecha">Fecha de la misión</label>
+                <input type="date" name="fecha" id="fecha" min="2016-06-20" >
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</section>
+<table>
+    <thead>
+    <tr>
+        <th>Tipo de servivio</th>
+        <th> Precio</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Mision simple</td>
+        <td>1000€</td>
+    </tr>
+    <tr>
+        <td>Rescate</td>
+        <td>5000€</td>
+    </tr>
+    <tr>
+        <td>Salvar Gothan</td>
+        <td>10000€</td>
+    </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+<footer>
+    Charlie &copy; 2016 Todos los derechos reservados.
+</footer>
+</body>
+</html>
