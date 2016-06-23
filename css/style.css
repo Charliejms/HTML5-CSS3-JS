@@ -1,6 +1,10 @@
+*{
+    box-sizing: content-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -80,4 +84,15 @@ body {
 .about-me .batman-info {
     max-width: 50%;
     float: right;
+}
+.team-member-photo img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 50%;
+}
+.section-content-reverse{
+    background-color: rgba(0, 0, 0, 0.92);
+    color: white;
+    margin-right:calc(-50vw + 50%);
+    margin-left: calc(-50vw + 50%);
 }
