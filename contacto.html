@@ -5,9 +5,7 @@
     <title>Bat Contacto</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>    <script>
         function initialize() {
             var myLatLng = {lat: 42.762480, lng: -83.283406};
 
@@ -28,102 +26,98 @@
     </script>
 </head>
 <body>
-<nav class="navbar">
-    <ul class="navbar-list">
-        <li class="navbar-item">
-            <a href="index.html">Bat Inicio</a>
-        </li>
-        <li class="navbar-item">
-            <a href="index.html">Bat Quien soy</a>
-        </li>
-        <li class="navbar-item">
-            <a href="index.html">Bat Equipo</a>
-        </li>
-        <li class="navbar-item">
-            <a href="index.html">Bat Transporte</a>
-        </li>
-        <li class="navbar-item active">
-            <a href="#contacto.html">Bat Contacto</a>
-        </li>
-    </ul>
-</nav>
-<div class="container">
-    <section class="row section-container">
-        <h2> Contacta con nosotros:</h2>
-        <div class="col-6">
-            <div id="googleMap"></div>
-        </div>
-        <div id="googleMaps"></div>
-        <div class="col-6">
-            <form  class="form" action="contact-batman" method="get">
-                <div class="form-row">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-row">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
-                </div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html">Quien soy</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html">Bat Equipo</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html">Bat Transporte</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="#contacto.html">Bat Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="row section-container">
+            <h2> Contacta con nosotros:</h2>
+            <div class="col-6">
+                <div id="googleMap"></div>
+            </div>
+            <div class="col-6">
+                <form  class="form" name="contact-batman" method="get">
+                    <div class="form-row">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    </div>
 
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="name@batcompany.com" required
-                           pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]">
-                    <!--Buscar otra expresión regular -->
-                </div>
-                <div class="form-row">
-                    <label for="tipo_mision_1">Consulta</label>
-                    <input type="radio" name="tipo_mision" id="tipo_mision_1" value="Consulta" required>
-                    <label for="tipo_mision_2">Misión simple</label>
-                    <input type="radio" name="tipo_mision" id="tipo_mision_2" value="Misión simple" required>
-                    <label for="tipo_mision_3">Rescate</label>
-                    <input type="radio" name="tipo_mision" id="tipo_mision_3" value="Rescate" required>
-                    <label for="tipo_mision_4">Salvar Gothan</label>
-                    <input type="radio" name="tipo_mision" id="tipo_mision_4" value="Salvar Gothan" required>
-                </div>
-                <div class="form-row">
-                    <label for="ejercito">Tamaño del ejercito</label>
-                    <input type="number" name="ejercito" id="ejercito" min="20" required>
-                </div>
-                <div class="form-row">
-                    <label for="fecha">Fecha de la misión</label>
-                    <input type="date" name="fecha" id="fecha" min="2016-06-20" >
-                </div>
-                <div class="form-row">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </div>
-    </section>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="name@batcompany.com" required
+                               pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]">
+                        <!--Buscar otra expresión regular -->
+                    </div>
+                    <div class="form-row">
+                        <label for="tipo_mision_1">Consulta</label>
+                        <input type="radio" name="tipo_mision" id="tipo_mision_1" value="Consulta" required>
+                        <label for="tipo_mision_2">Misión simple</label>
+                        <input type="radio" name="tipo_mision" id="tipo_mision_2" value="Misión simple" required>
+                        <label for="tipo_mision_3">Rescate</label>
+                        <input type="radio" name="tipo_mision" id="tipo_mision_3" value="Rescate" required>
+                        <label for="tipo_mision_4">Salvar Gothan</label>
+                        <input type="radio" name="tipo_mision" id="tipo_mision_4" value="Salvar Gothan" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="ejercito">Tamaño del ejercito</label>
+                        <input type="number" name="ejercito" id="ejercito" min="20" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="fecha">Fecha de la misión</label>
+                        <input type="date" name="fecha" id="fecha" min="2016-06-20" >
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
 
-    <section class="section-container">
-        <table>
-            <thead>
-            <tr>
-                <th>Tipo de servivio</th>
-                <th> Precio</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Mision simple</td>
-                <td>1000€</td>
-            </tr>
-            <tr>
-                <td>Rescate</td>
-                <td>5000€</td>
-            </tr>
-            <tr>
-                <td>Salvar Gothan</td>
-                <td>10000€</td>
-            </tr>
-            </tbody>
-            <tfoot>
-
-            </tfoot>
-        </table>
-    </section>
-</div>
+        <section class="section-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Tipo de servivio</th>
+                    <th> Precio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mision simple</td>
+                    <td>1000€</td>
+                </tr>
+                <tr>
+                    <td>Rescate</td>
+                    <td>5000€</td>
+                </tr>
+                <tr>
+                    <td>Salvar Gothan</td>
+                    <td>10000€</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 
 <footer class="footer">
     Charlie &copy; 2016 Todos los derechos reservados.

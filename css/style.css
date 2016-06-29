@@ -6,6 +6,9 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+#googleMap{
+    height: 400px;
+}
 
 @font-face {
     font-family: batman;
@@ -69,6 +72,9 @@ body {
     font-family: batman;
     text-align: center;
     font-size: 100px;
+    animation: titleAnimation 2s forwards;
+    visibility: visible;
+    animation-delay: 0.8s;
 }
 
 .title-img {
@@ -93,6 +99,10 @@ body {
     text-align: center;
     font-family: batman;
     font-size: 28px;
+    opacity: 0;
+    animation: subtitleAnimation 3s forwards;
+    animation-delay: 1s;
+
 }
 
 .about-me .batman-photo {
@@ -134,7 +144,7 @@ body {
 .section-content-reverse{
     background-color: rgba(0, 0, 0, 0.92);
     color: white;
-    margin-right:calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     margin-left: calc(-50vw + 50%);
 }
 .row-flex {
@@ -216,7 +226,31 @@ tbody > tr:nth-child(add){
     background-color: blueviolet;
 }
 */
-#section-container{
+.section-container{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+@keyframes titleAnimation {
+    0%{
+        font-size: 200px;
+    }
+    50%{
+        font-size: 180px;
+    }
+    100%{
+        font-size: 100px;
+        visibility: visible;
+    }
+}
+@keyframes subtitleAnimation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
